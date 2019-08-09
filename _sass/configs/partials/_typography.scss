@@ -1,0 +1,50 @@
+// Config::Typography
+// This file contains the configuration variables for all typography
+
+// Font-face imports
+// @import custom fonts here
+@font-face {
+  font-family: 'SF Pro Thin';
+  src: url('/assets/fonts/sf-pro-display-thin.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/sf-pro-display-thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/sf-pro-display-thin.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/sf-pro-display-thin.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/assets/fonts/sf-pro-display-thin.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/sf-pro-display-thin.svg#sf_pro_displaythin') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'SF Pro Light';
+  src: url('/assets/fonts/sf-pro-display-light.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/sf-pro-display-light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/sf-pro-display-light.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/sf-pro-display-light.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/assets/fonts/sf-pro-display-light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/sf-pro-display-light.svg#sf_pro_displaylight') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'SF Pro Ultralight';
+  src: url('/assets/fonts/sf-pro-display-ultralight.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/sf-pro-display-ultralight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/sf-pro-display-ultralight.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/sf-pro-display-ultralight.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/assets/fonts/sf-pro-display-ultralight.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/sf-pro-display-ultralight.svg#sf_pro_displayultralight') format('svg'); /* Legacy iOS */
+}
+
+// Typography Scale
+$base-font-size: 16px;
+$base-line-height: 1;
+
+$font-size-small: 0.75rem;
+$font-size-medium: 1rem;
+$font-size-large: 1.375rem;
+$font-size-xlarge: 2rem;
+
+// Font Stack
+$base-font-family: 'SF Pro Thin', Helvetica, Arial, sans-serif;
+$header-font-family: 'SF Pro Light', Helvetica, Arial, sans-serif;
+$heading-font-family: 'SF Pro Ultralight', Helvetica, Arial, sans-serif;
+$button-font-family: 'SF Pro Thin', Helvetica, Arial, sans-serif;
+$footer-font-family: 'SF Pro Thin', Helvetica, Arial, sans-serif;

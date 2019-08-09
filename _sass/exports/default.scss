@@ -1,0 +1,19 @@
+// 1. <-configs->
+@import "../configs/index";
+// 2. <-functions->
+@import "../helpers/functions/index";
+// 3. <-mixins->
+@import "../helpers/mixins/index";
+// 4. <-core->
+@import "../core/index";
+// 5. <-vendors->
+@import "../vendors/index";
+// 6. <-layouts->
+// 7. <-modules->
+@import "../modules/icons/index";
+// 8. <-units->
+@import "../units/content/index";
+@import "../units/header/index";
+@import "../units/footer/index";
+// 9. <-pages->
+// 10. <-hotfixes->
