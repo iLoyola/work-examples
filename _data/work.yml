@@ -1,9 +1,0 @@
-work-ihookup:
-  - mobile: "/assets/images/ihookup-mobile.png"
-  - tablet: "/assets/images/ihookup-tablet.png"
-  - desktop: "/assets/images/ihookup-desktop.png"
-
-work-blacktryst:
-  - mobile: "/assets/images/blacktryst-mobile.png"
-  - tablet: "/assets/images/blacktryst-tablet.png"
-  - desktop: "/assets/images/blacktryst-desktop.png"

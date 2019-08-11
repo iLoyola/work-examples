@@ -3,15 +3,15 @@
   <div class="il-footer-l">
 
     <div class="il-footer-l-1">
-      <h2 class="footer-heading">{{ site.title }}</h2>
+      <p class="il-footer-small-text">Powered by {{ site.title }}</p>
     </div>
 
     <div class="il-footer-l-2">
-      <p class="footer-small-text">All rights reserved under {{ site.title }}</p>
+      <p class="il-footer-small-text">Copyright © {{ site.time | date: '%Y' }} All rights reserved under {{ site.title }}</p>
     </div>
 
     <div class="il-footer-l-3">
-      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      <p class="il-footer-small-text">Email me at: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
     </div>
 
   </div>

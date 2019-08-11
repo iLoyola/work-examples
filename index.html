@@ -5,27 +5,45 @@ page: index
 
 <div class="il-content">
   <div class="il-content-l">
-      <section>
-        <p>Ivan Loyola is Front-end Web Developer with over 12+ years of experience. He has strong coding skills in HTML(5),
-          CSS(SASS) and javascript (jquery). Competent utilizing web development tools such as vuejs, angularjs, reactjs,
-          jekylljs, handlebarsjs, grunt, webpack and design software like Photoshop and Illustrator.</p>
-        <p>He can create high quality digital experience and web development from responsive mobile first to large-scale
-          devices. Self-motivated professional having worked remotely for the last two years with a proven ability to work
-          individually and as part of a team.</p>
-        <p> strong contributor in the agile team environment, specifically during retrospectives, backlog grooming and team
-          planning sessions. Strong confidential and privacy work ethic. Ability to complete tasks under pressure and within
-          tight deadlines.</p>
-      </section>
-      <aside>
-        <ul class="social-media-list">
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
+      <div class="il-content-l-h">
+          <section>
+            <p><span>Ivan Loyola</span> is Front-end Web Developer with over 12+ years of experience. He has strong coding skills in HTML(5),
+              CSS(SASS) and javascript (jquery). Competent utilizing web development tools such as vuejs, angularjs, reactjs,
+              jekylljs, handlebarsjs, grunt, webpack and design software like Photoshop and Illustrator.</p>
+            <p>He can create high quality digital experience and web development from responsive mobile first to large-scale
+              devices. Self-motivated professional having worked remotely for the last two years with a proven ability to work
+              individually and as part of a team.</p>
+            <p> strong contributor in the agile team environment, specifically during retrospectives, backlog grooming and team
+              planning sessions. Strong confidential and privacy work ethic. Ability to complete tasks under pressure and within
+              tight deadlines.</p>
+          </section>
+          <aside>
+            <ul class="il-social-media-list">
+              <li class="il-social-media-list-item">
+                {% include icon-github.html username=site.github_username %}
+              </li>
 
-          <li>
-            {% include icon-linkedin.html username=site.twitter_username %}
-          </li>
-        </ul>
-      </aside>
+              <li class="il-social-media-list-item">
+                {% include icon-linkedin.html username=site.twitter_username %}
+              </li>
+            </ul>
+          </aside>
+      </div>
+      {% for work_hash in site.data.works %}
+      {% assign work = work_hash[1] %}
+        <div class="il-content-l-{{ forloop.index }}">
+          <div class="il-content-list">
+            <div class="il-content-list-item il-content-tablet">
+              <img src="{{ work.tablet.url }}" alt="{{ work.tablet.alt }}">
+            </div>
+            <div class="il-content-list-item il-content-mobile">
+              <img src="{{ work.mobile.url }}" alt="{{ work.mobile.alt }}">
+            </div>
+            <div class="il-content-list-item il-content-desktop">
+              <img src="{{ work.desktop.url }}" alt="{{ work.desktop.alt }}">
+            </div>
+          </div>
+        </div>
+      {% endfor %}
   </div>
 </div>

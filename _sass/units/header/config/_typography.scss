@@ -1,27 +1,27 @@
-.il-header {
+.#{$prefix}header {
 
 }
 
-.il-header-l {
+.#{$prefix}header-l {
 
 }
 
-.il-header-l-1 {
+.#{$prefix}header-l-1 {
 }
 
-.il-header-l-2 {
-
-}
-
-.il-header-l-3 {
+.#{$prefix}header-l-2 {
 
 }
 
-.il-header-l-4 {
+.#{$prefix}header-l-3 {
 
 }
 
-.il-header-logo {
+.#{$prefix}header-l-4 {
+
+}
+
+.#{$prefix}header-logo {
   font-family: $header-font-family;
   font-size: $font-size-medium;
 }

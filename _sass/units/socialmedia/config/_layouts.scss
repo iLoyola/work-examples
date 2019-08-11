@@ -1,0 +1,9 @@
+.#{$prefix}social-media-list {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.#{$prefix}social-media-list-item {
+  display: inline-block;
+}

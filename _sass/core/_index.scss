@@ -27,8 +27,16 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 .highlight {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
+
+/**
+ *
+ * Box Sizing
+ */
+ *, *:before, *:after {
+   box-sizing: border-box;
+ }
 
 /**
  * Images
@@ -47,18 +55,6 @@ figure > img {
 
 figcaption {
   font-size: 14px;
-}
-
-/**
- * Lists
- */
-ul, ol {
-  margin-left: 30px;
-}
-
-li > ul,
-li > ol {
-  margin-bottom: 0;
 }
 
 /**

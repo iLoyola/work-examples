@@ -1,0 +1,50 @@
+.#{$prefix}content {
+
+}
+
+.#{$prefix}content-l {
+
+}
+
+.#{$prefix}content-l-1 {
+
+}
+
+.#{$prefix}content-l-2 {
+
+}
+
+.#{$prefix}content-l-3 {
+
+}
+
+.#{$prefix}content-l-4 {
+
+}
+
+.#{$prefix}content-list {
+  .#{$prefix}content-list-item {
+    &.#{$prefix}content-tablet {
+      background-image: url('/assets/svg/tablet.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    &.#{$prefix}content-mobile {
+      background-image: url('/assets/svg/mobile.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    &.#{$prefix}content-desktop {
+      background-image: url('/assets/svg/display.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
+
+.#{$prefix}content-ihookup {
+
+}
