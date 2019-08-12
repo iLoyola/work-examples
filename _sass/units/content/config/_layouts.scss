@@ -76,6 +76,14 @@
   position: relative;
   width: 100%;
   .#{$prefix}content-list-item {
+    .#{$prefix}content-loading {
+      left: 50%;
+      height: 40px;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 40px;
+    }
     &.#{$prefix}content-tablet {
       bottom: 1rem;
       display: none;
@@ -84,11 +92,16 @@
       position: absolute;
       left: 1rem;
       z-index: 2;
-      img {
+      .#{$prefix}content-tablet-bg {
         position: absolute;
+        height: 283px;
         width: 376px;
         top: 62px;
         left: 60px;
+        .#{$prefix}content-img-tablet {
+          position: absolute;
+          width: 376px;
+        }
       }
       @media screen and ( min-width: 720px ) {
         display: inline-block;
@@ -102,11 +115,16 @@
       position: absolute;
       left: 50%;
       z-index: 3;
-      img {
+      .#{$prefix}content-mobile-bg {
         position: absolute;
         width: 230px;
+        height: 288px;
         top: 57px;
         left: 29px;
+        .#{$prefix}content-img-mobile {
+          position: absolute;
+          width: 230px;
+        }
       }
     }
     &.#{$prefix}content-desktop {
@@ -117,11 +135,16 @@
       position: absolute;
       right: 1rem;
       z-index: 1;
-      img {
+      .#{$prefix}content-desktop-bg {
         position: absolute;
         width: 438px;
+        height: 250px;
         top: 32px;
         left: 31px;
+        .#{$prefix}content-img-desktop {
+          position: absolute;
+          width: 438px;
+        }
       }
       @media screen and ( min-width: 720px ) {
         display: inline-block;

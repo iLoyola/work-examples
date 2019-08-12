@@ -31,17 +31,19 @@
 .#{$prefix}content-list {
   .#{$prefix}content-list-item {
     &.#{$prefix}content-tablet {
-
+      .#{$prefix}content-tablet-bg {
+        background-color: $white-iwhite;
+      }
     }
     &.#{$prefix}content-mobile {
-
+      .#{$prefix}content-mobile-bg {
+        background-color: $white-iwhite;
+      }
     }
     &.#{$prefix}content-desktop {
-
+      .#{$prefix}content-desktop-bg {
+        background-color: $white-iwhite;
+      }
     }
   }
-}
-
-.#{$prefix}content-ihookup {
-
 }
