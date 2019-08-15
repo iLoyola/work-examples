@@ -87,21 +87,19 @@
     &.#{$prefix}content-tablet {
       bottom: 1rem;
       display: none;
-      height: 408px;
+      height: 406px;
       width: 500px;
       position: absolute;
       left: 1rem;
       z-index: 2;
-      .#{$prefix}content-tablet-bg {
+      .#{$prefix}content-loading {
+        margin-top: 0;
+      }
+      .#{$prefix}content-img-tablet {
+        margin-top: 63px;
+        margin-left: 62px;
         position: absolute;
-        height: 283px;
         width: 376px;
-        top: 62px;
-        left: 60px;
-        .#{$prefix}content-img-tablet {
-          position: absolute;
-          width: 376px;
-        }
       }
       @media screen and ( min-width: 720px ) {
         display: inline-block;
@@ -110,41 +108,37 @@
     &.#{$prefix}content-mobile {
       bottom: 1rem;
       height: 460px;
-      width: 288px;
+      width: 287px;
       transform: translateX(-50%);
       position: absolute;
       left: 50%;
       z-index: 3;
-      .#{$prefix}content-mobile-bg {
+      .#{$prefix}content-loading {
+        margin-top: -40px;
+      }
+      .#{$prefix}content-img-mobile {
         position: absolute;
         width: 230px;
-        height: 288px;
-        top: 57px;
-        left: 29px;
-        .#{$prefix}content-img-mobile {
-          position: absolute;
-          width: 230px;
-        }
+        margin-top: 58px;
+        margin-left: 28px;
       }
     }
     &.#{$prefix}content-desktop {
       bottom: 1rem;
       display: none;
-      height: 438px;
+      height: 437px;
       width: 500px;
       position: absolute;
       right: 1rem;
       z-index: 1;
-      .#{$prefix}content-desktop-bg {
+      .#{$prefix}content-loading {
+        margin-top: -60px;
+      }
+      .#{$prefix}content-img-desktop {
         position: absolute;
-        width: 438px;
-        height: 250px;
-        top: 32px;
-        left: 31px;
-        .#{$prefix}content-img-desktop {
-          position: absolute;
-          width: 438px;
-        }
+        width: 448px;
+        margin-top: 7px;
+        margin-left: 24px;
       }
       @media screen and ( min-width: 720px ) {
         display: inline-block;
