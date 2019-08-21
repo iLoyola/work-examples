@@ -1,0 +1,30 @@
+.glide--slider {
+  height: 500px;
+  position: relative;
+}
+
+.glide__bullets {
+  position: absolute;
+  display: none;
+  bottom: 14px;
+  left: 50%;
+  margin-left: -27.5px;
+}
+
+.smartphone {
+  .glide__bullets {
+    display: block;
+  }
+}
+
+.glide__bullet {
+  background-color: $white-whitesmoke;
+  border-radius: 15px;
+  border-width: 1px;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  &.glide__bullet--active {
+    background-color: $black-iblack;
+  }
+}

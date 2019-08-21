@@ -1,9 +1,9 @@
 desktop:
   alt: "iLoyola playcam desktop screenshot"
-  url: /assets/images/screenshots/desktop_playcam_il.jpg
+  url: /assets/images/screenshots/display-device-playcam.png
 mobile:
   alt: "iLoyola playcam mobile screenshot"
-  url: /assets/images/screenshots/mobile_playcam_il.jpg
+  url: /assets/images/screenshots/mobile-device-playcam.png
 tablet:
   alt: "iLoyola playcam tablet screenshot"
-  url: /assets/images/screenshots/tablet_playcam_il.jpg
+  url: /assets/images/screenshots/tablet-device-playcam.png

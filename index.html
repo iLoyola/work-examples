@@ -23,22 +23,32 @@ page: index
       </div>
       {% for work_hash in site.data.works %}
       {% assign work = work_hash[1] %}
-        <div class="il-content-l-{{ forloop.index }}">
-          <div class="il-content-list">
-            <div class="il-content-list-item il-content-tablet">
-              <img class="il-content-loading" src="/assets/svg/loading.svg" alt="loading">
-              <img class="il-content-img-tablet" src="{{ work.tablet.url }}" alt="{{ work.tablet.alt }}">
+      <div class="glide-{{ forloop.index }}">
+        <div class="il-content-l-{{ forloop.index }} glide__track" data-glide-el="track">
+          <div class="il-content-list glide__slides">
+            <div class="il-content-list-item il-content-tablet glide__slide">
+              <div class="il-content-tablet-media">
+                <img class="il-content-tablet-image" src="/assets/svg/loading.svg" data-echo="{{ work.tablet.url }}" alt="{{ work.tablet.alt }}">
+              </div>
             </div>
-            <div class="il-content-list-item il-content-mobile">
-              <img class="il-content-loading" src="/assets/svg/loading.svg" alt="loading">
-              <img class="il-content-img-mobile" src="{{ work.mobile.url }}" alt="{{ work.mobile.alt }}">
+            <div class="il-content-list-item il-content-mobile glide__slide">
+              <div class="il-content-mobile-media">
+                <img class="il-content-mobile-image" src="/assets/svg/loading.svg" data-echo="{{ work.mobile.url }}" alt="{{ work.mobile.alt }}">
+              </div>
             </div>
-            <div class="il-content-list-item il-content-desktop">
-              <img class="il-content-loading" src="/assets/svg/loading.svg" alt="loading">
-              <img  class="il-content-img-desktop" src="{{ work.desktop.url }}" alt="{{ work.desktop.alt }}">
+            <div class="il-content-list-item il-content-desktop glide__slide">
+              <div class="il-content-desktop-media">
+                <img class="il-content-desktop-image" src="/assets/svg/loading.svg" data-echo="{{ work.desktop.url }}" alt="{{ work.desktop.alt }}">
+              </div>
             </div>
           </div>
         </div>
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+          <button class="glide__bullet" data-glide-dir="=0"></button>
+          <button class="glide__bullet" data-glide-dir="=1"></button>
+          <button class="glide__bullet" data-glide-dir="=2"></button>
+        </div>
+      </div>
       {% endfor %}
   </div>
 </div>

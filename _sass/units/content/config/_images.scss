@@ -23,24 +23,17 @@
 }
 
 .#{$prefix}content-list {
-  .#{$prefix}content-list-item {
-    &.#{$prefix}content-tablet {
-      background-image: url('/assets/images/devices/tablet.png');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
-    &.#{$prefix}content-mobile {
-      background-image: url('/assets/images/devices/mobile.png');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
-    &.#{$prefix}content-desktop {
-      background-image: url('/assets/images/devices/display.png');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
+
+}
+
+.#{$prefix}content-list-item {
+  &.#{$prefix}content-tablet {
+
+  }
+  &.#{$prefix}content-mobile {
+
+  }
+  &.#{$prefix}content-desktop {
+
   }
 }

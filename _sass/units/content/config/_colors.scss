@@ -27,3 +27,17 @@
 .#{$prefix}content-l-3 {
   background-color: $white-whitesmoke;
 }
+
+.#{$prefix}content-list {
+  .#{$prefix}content-list-item {
+    &.#{$prefix}content-tablet {
+
+    }
+    &.#{$prefix}content-mobile {
+
+    }
+    &.#{$prefix}content-desktop {
+
+    }
+  }
+}
