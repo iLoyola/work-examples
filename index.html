@@ -23,7 +23,7 @@ page: index
       </div>
       {% for work_hash in site.data.works %}
       {% assign work = work_hash[1] %}
-      <div class="glide-{{ forloop.index }}">
+      <div class="js-glide-{{ forloop.index }}">
         <div class="il-content-l-{{ forloop.index }} glide__track" data-glide-el="track">
           <div class="il-content-list glide__slides">
             <div class="il-content-list-item il-content-tablet glide__slide">

@@ -58,17 +58,14 @@
 
 .#{$prefix}content-l-1 {
   border-radius: 10px;
-  margin-bottom: 3rem;
 }
 
 .#{$prefix}content-l-2 {
   border-radius: 10px;
-  margin-bottom: 3rem;
 }
 
 .#{$prefix}content-l-3 {
   border-radius: 10px;
-  margin-bottom: 3rem;
 }
 
 .#{$prefix}content-list {
@@ -156,7 +153,7 @@
       padding-bottom: 1rem;
       padding-left: 1rem;
       padding-right: 1rem;
-      padding-top: 48px;
+      padding-top: 1rem;
       position: relative;
       @media screen and ( min-width: 720px ) {
         display: block;
