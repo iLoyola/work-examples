@@ -13,8 +13,7 @@ module.exports = {
       {
         test: /\.js?$/,
         exclude: [
-          path.resolve(__dirname, "node_modules"),
-          path.resolve(__dirname, "bower_components")
+          path.resolve(__dirname, "node_modules")
         ],
         loader: "babel-loader",
         query: {
