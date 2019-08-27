@@ -5,8 +5,8 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "./node_modules/.bin/webpack --watch | bundle exec jekyll serve --livereload --incremental",
-    "build": "./node_modules/.bin/webpack | bundle exec jekyll build",
+    "start": "webpack --watch | bundle exec jekyll serve --livereload --incremental",
+    "build": "webpack | bundle exec jekyll build",
     "prod": "JEKYLL_ENV=production bundle exec jekyll build"
   },
   "repository": {
